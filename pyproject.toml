@@ -1,0 +1,20 @@
+[project]
+name = "tinygit"
+version = "0.1.0"
+description = "A small Git written to learn how Git stores objects."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+tinygit = "tinygit.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tinygit"]
